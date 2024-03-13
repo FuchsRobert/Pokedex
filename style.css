@@ -1,0 +1,70 @@
+/*Header*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.headerLeft {
+    display: flex;
+    align-items: center;
+}
+.headline {
+    color: black;
+}
+.headerImg {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 20px;
+}
+.headerRight {
+    display: flex;
+    align-items: center;
+}
+.inputfield {
+    margin-right: 10px;
+}
+.btn-secondary {
+    background-color: #194F6E !important;
+}
+/*Body*/
+body {
+    margin: 0;
+    background-image: url('./img/pokedex.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Noto Sans';
+}
+#pokedex {
+    min-height: 50vh;
+    background-color: rgba(250, 250, 138, 0.473);
+    color: black;
+    display: flex;
+}
+#pokemonImg {
+    height: auto;
+    width: 80%;
+}
+.pokedex-number-container {
+    display: flex;
+    align-items: center;
+}
+#pokedexNumberSymbol {
+    margin-right: 5px;
+    /* Abstand zwischen dem Symbol und der Nummer */
+}
+.card {
+    margin: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card.fairy {
+    background-color: #ED98ED;
+}
+.list-group-item .fairy {
+    background-color: #ED98ED;
+}

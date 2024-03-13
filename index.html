@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <script src="script.js"></script>
+    <script src="scriptPopup.js"></script>
+    <link rel="shortcut icon" href="./img/pokemon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylePopup.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts.css">
+</head>
+
+<body onload="loadPokemon(); includeHTML()">
+
+    <header>
+        <div w3-include-html="./templates/header.html"></div>
+    </header>
+    <div id="pokedex">
+        <div id="overlay">
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="card fairy" style="width: 18rem;">
+            <img id="pokemonImg" class="card-img-top img-fluid rounded-start" alt="Togepi">
+            <div class="card-body">
+                <div class="pokedex-number-container">
+                    <p id="pokedexNumberSymbol">#</p>
+                    <p id="pokedexNumber">Nr.</p>
+                </div>
+                <h5 class="card-title" id="pokemonName">Name</h5>
+                <p class="card-text" id="pokemonType">Typ</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Größe: <span id="pokemonHeight">Größe</span></li>
+                <li class="list-group-item">Gewicht: <span id="pokemonWeight">Gewicht</span></li>
+                <li class="list-group-item">Attacken: <span id="pokemonAbility">Attacken</span></li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+
+</html>
